@@ -1,5 +1,5 @@
 import React from 'react';
-import {ScrollView, View, Dimensions} from 'react-native';
+import {ScrollView} from 'react-native';
 import {Cabecalho, Lista} from './componentes';
 import {Botao} from '../../componentes';
 
