@@ -6,10 +6,16 @@ import {
   View,
   Text,
   ImageBackground,
-  Button,
 } from 'react-native';
 import {Sacola, Botao} from '../../componentes';
 import {useNavigation} from '@react-navigation/native';
+import {
+  FONT_FAMILY_REGULAR,
+  FONT_SIZE_14,
+  FONT_SIZE_16,
+  FONT_FAMILY_BOLD,
+  FONT_SIZE_20,
+} from '../../styles/tipografia';
 
 export const DetalhesProduto = () => {
   const imgSrc = require('../../assets/images/bgimage.png');
@@ -17,7 +23,7 @@ export const DetalhesProduto = () => {
 
   return (
     <View style={{flex: 1}}>
-      <View style={{flex: 2}}>
+      <View style={{flex: 1.5}}>
         <ImageBackground
           resizeMode="cover"
           source={imgSrc}
@@ -52,44 +58,83 @@ export const DetalhesProduto = () => {
       <View
         style={{
           flex: 1,
-          marginTop: -60
+          marginTop: -60,
         }}>
         <View
           style={{
             justifyContent: 'center',
-            flexDirection: 'row'
+            flexDirection: 'row',
+            alignItems: 'center',
           }}>
           <View
             style={{
               backgroundColor: 'white',
               borderRadius: 30,
-              padding: 32,
-              width: '88%',
-              elevation: 4
+              padding: 28,
+              width: '80%',
+              elevation: 4,
             }}>
             <View
               style={{flexDirection: 'row', justifyContent: 'space-between'}}>
               <View>
-                <Text>Jim&Jill Designs</Text>
-                <Text>Wilson</Text>
-                <Text>Table Lamp</Text>
+                <Text
+                  style={{
+                    fontFamily: FONT_FAMILY_BOLD,
+                    fontSize: FONT_SIZE_16,
+                    marginBottom: 4,
+                  }}>
+                  Jim&Jill Designs
+                </Text>
+                <Text
+                  style={{
+                    fontFamily: FONT_FAMILY_BOLD,
+                    fontSize: FONT_SIZE_20,
+                    marginBottom: 4,
+                  }}>
+                  Wilson
+                </Text>
+                <Text
+                  style={{
+                    fontFamily: FONT_FAMILY_REGULAR,
+                    fontSize: FONT_SIZE_14,
+                    color: '#CACACA',
+                    marginBottom: 12,
+                  }}>
+                  Table Lamp
+                </Text>
               </View>
 
               <Image
                 source={require('../../assets/images/detalhes-table-lamp.png')}
-                style={{width: 24, height: 60}}
+                style={{width: 30, height: 72}}
               />
             </View>
             <View>
-              <Text>
+              <Text
+                style={{
+                  fontFamily: FONT_FAMILY_REGULAR,
+                  fontSize: FONT_SIZE_14,
+                  color: '#ACAAAB',
+                }}>
                 Jim&Kill Designs created a master piece called Wilson. It's a
-                dream lamp for any chic office out there
+                dream lamp for any chic office out there.
               </Text>
             </View>
             <View
-              style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
-              <Text>$92</Text>
-              <Botao titulo="DETAILS" />
+              style={{
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+              }}>
+              <Text
+                style={{
+                  fontFamily: FONT_FAMILY_BOLD,
+                  fontSize: 22,
+                  marginTop: 10,
+                }}>
+                $92,00
+              </Text>
+              <Botao titulo="DETAILS" icone={false} width={140} />
             </View>
           </View>
         </View>
