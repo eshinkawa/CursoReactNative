@@ -18,7 +18,11 @@ const App = () => {
             component={ListaProdutos}
             options={{headerShown: false}}
           />
-          <Stack.Screen name="DetalhesProduto" component={DetalhesProduto} options={{headerShown: false}}/>
+          <Stack.Screen
+            name="DetalhesProduto"
+            component={DetalhesProduto}
+            options={{headerShown: false}}
+          />
         </Stack.Navigator>
       </SafeAreaView>
     </NavigationContainer>

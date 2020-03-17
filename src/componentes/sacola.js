@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Image, StyleSheet} from 'react-native';
 
 export const Sacola = () => {
-  const icon = require('../assets/images/icon-bag.png');
+  const icon = require('../assets/images/icone-sacola.png');
   return <Image source={icon} style={styles.iconeSacola} />;
 };
 

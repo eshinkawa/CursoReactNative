@@ -3,6 +3,7 @@ import {View, Text, Image, StyleSheet, TouchableOpacity} from 'react-native';
 import {
   FONT_SIZE_14,
   FONT_FAMILY_SEMI_BOLD,
+  FONT_SIZE_SMALL,
 } from '../../../../styles/tipografia';
 import {useNavigation} from '@react-navigation/native';
 
@@ -33,7 +34,7 @@ const styles = StyleSheet.create({
   texto: {
     marginTop: 8,
     fontFamily: FONT_FAMILY_SEMI_BOLD,
-    fontSize: FONT_SIZE_14,
+    fontSize: FONT_SIZE_SMALL,
     color: '#848486',
   },
 });

@@ -7,7 +7,7 @@ export const Cabecalho = () => {
   return (
     <View style={styles.container}>
       <Image
-        source={require('../../../../assets/images/icon-menu.png')}
+        source={require('../../../../assets/images/icone-menu.png')}
         style={styles.iconeMenu}
       />
       <Text style={styles.titulo}>LightAR</Text>

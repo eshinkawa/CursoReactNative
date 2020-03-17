@@ -3,7 +3,7 @@ import {View, Text, Image, StyleSheet, TouchableOpacity} from 'react-native';
 import {FONT_FAMILY_REGULAR, FONT_SIZE_16} from '../styles/tipografia';
 
 export const Botao = ({width = 200, titulo, icone = true}) => {
-  const icon = require(`../assets/images/icon-cube.png`);
+  const icon = require(`../assets/images/icone-cubo.png`);
   return (
     <TouchableOpacity>
       <View style={{alignItems: 'center', marginTop: 16}}>
