@@ -1,13 +1,22 @@
 import React from 'react';
-import {View, Text, Image, StyleSheet, Dimensions} from 'react-native';
-import { FONT_FAMILY_REGULAR, FONT_SIZE_14, FONT_SIZE_24, FONT_SIZE_12, FONT_SIZE_16, FONT_FAMILY_SEMI_BOLD } from '../../../../styles/tipografia';
+import {View, Text, Image, StyleSheet, TouchableOpacity} from 'react-native';
+import {
+  FONT_SIZE_14,
+  FONT_FAMILY_SEMI_BOLD,
+  FONT_SIZE_SMALL,
+} from '../../../../styles/tipografia';
+import {useNavigation} from '@react-navigation/native';
 
-export const Item = ({descricao, imagem}) => {
+const Item = ({descricao, imagem}) => {
+  const navigation = useNavigation();
+
   return (
-    <View style={styles.containerItem}>
-      <Image source={imagem} style={{height:84}} resizeMode="contain"/>
+    <TouchableOpacity
+      onPress={() => navigation.navigate('DetalhesProduto')}
+      style={styles.containerItem}>
+      <Image source={imagem} style={{height: 84}} resizeMode="contain" />
       <Text style={styles.texto}>{descricao}</Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 
@@ -15,7 +24,7 @@ const styles = StyleSheet.create({
   containerItem: {
     height: 168,
     backgroundColor: 'white',
-    elevation: 4,
+    elevation: 1,
     flex: 0.5,
     borderRadius: 10,
     justifyContent: 'center',
@@ -25,7 +34,9 @@ const styles = StyleSheet.create({
   texto: {
     marginTop: 8,
     fontFamily: FONT_FAMILY_SEMI_BOLD,
-    fontSize: FONT_SIZE_14,
-    color: "#848486"
-  }
+    fontSize: FONT_SIZE_SMALL,
+    color: '#848486',
+  },
 });
+
+export default Item;

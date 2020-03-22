@@ -1,9 +1,10 @@
 import React from 'react';
-import {ScrollView, View, Dimensions} from 'react-native';
-import {Cabecalho, Lista} from './componentes';
-import {Botao} from '../../componentes';
+import {ScrollView} from 'react-native';
+import Cabecalho from './componentes/Cabecalho';
+import Lista from './componentes/Lista';
+import Botao from '../../componentes/Botao';
 
-export const ListaProdutos = () => {
+const ListaProdutos = () => {
   return (
     <ScrollView contentContainerStyle={{paddingBottom: 36}}>
       <Cabecalho />
@@ -12,3 +13,5 @@ export const ListaProdutos = () => {
     </ScrollView>
   );
 };
+
+export default ListaProdutos;

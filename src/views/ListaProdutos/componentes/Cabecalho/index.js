@@ -1,21 +1,21 @@
 import React from 'react';
 import {View, Text, Image} from 'react-native';
 import {styles} from './styles';
+import Sacola from '../../../../componentes/Sacola';
 
-export const Cabecalho = () => {
+const Cabecalho = () => {
   return (
     <View style={styles.container}>
       <Image
-        source={require('../../../../assets/images/icon-menu.png')}
+        source={require('../../../../assets/images/icone-menu.png')}
         style={styles.iconeMenu}
       />
       <Text style={styles.titulo}>LightAR</Text>
       <View style={styles.containerSacola}>
-        <Image
-          source={require('../../../../assets/images/icon-bag.png')}
-          style={styles.iconeSacola}
-        />
+        <Sacola />
       </View>
     </View>
   );
 };
+
+export default Cabecalho;
