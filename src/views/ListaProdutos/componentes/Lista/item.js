@@ -7,7 +7,7 @@ import {
 } from '../../../../styles/tipografia';
 import {useNavigation} from '@react-navigation/native';
 
-export const Item = ({descricao, imagem}) => {
+const Item = ({descricao, imagem}) => {
   const navigation = useNavigation();
 
   return (
@@ -38,3 +38,5 @@ const styles = StyleSheet.create({
     color: '#848486',
   },
 });
+
+export default Item;

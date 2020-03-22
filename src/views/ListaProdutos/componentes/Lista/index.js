@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, FlatList} from 'react-native';
 import {styles} from './styles';
-import { Item } from './item';
+import Item from './item';
 
 const DATA = [
   {
@@ -37,7 +37,7 @@ const DATA = [
 ];
 
 
-export const Lista = () => {
+const Lista = () => {
   return (
     <View style={styles.container}>
       <View style={styles.separador} />
@@ -58,3 +58,5 @@ export const Lista = () => {
     </View>
   );
 };
+
+export default Lista;

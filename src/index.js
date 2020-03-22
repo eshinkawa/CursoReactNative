@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, SafeAreaView} from 'react-native';
-import {ListaProdutos} from './views/ListaProdutos';
-import {DetalhesProduto} from './views/DetalhesProduto';
+import ListaProdutos from './views/ListaProdutos';
+import DetalhesProduto from './views/DetalhesProduto';
 import {COR_DE_FUNDO} from './styles/cores';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';

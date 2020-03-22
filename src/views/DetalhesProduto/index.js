@@ -6,12 +6,13 @@ import {
   Text,
   ImageBackground,
 } from 'react-native';
-import {Sacola, Botao} from '../../componentes';
+import Sacola from '../../componentes/Sacola';
+import Botao from '../../componentes/Botao';
 import {useNavigation} from '@react-navigation/native';
 
 import {styles} from './styles';
 
-export const DetalhesProduto = () => {
+const DetalhesProduto = () => {
   const imgSrc = require('../../assets/images/bgimage.png');
   const navigation = useNavigation();
 
@@ -87,3 +88,4 @@ export const DetalhesProduto = () => {
   );
 };
 
+export default DetalhesProduto;

@@ -1,9 +1,9 @@
 import React from 'react';
 import {View, Text, Image} from 'react-native';
 import {styles} from './styles';
-import { Sacola } from '../../../../componentes';
+import Sacola from '../../../../componentes/Sacola';
 
-export const Cabecalho = () => {
+const Cabecalho = () => {
   return (
     <View style={styles.container}>
       <Image
@@ -17,3 +17,5 @@ export const Cabecalho = () => {
     </View>
   );
 };
+
+export default Cabecalho;

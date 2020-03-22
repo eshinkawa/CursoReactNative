@@ -1,7 +1,7 @@
 import React from 'react';
-import {View, Image, StyleSheet} from 'react-native';
+import {Image, StyleSheet} from 'react-native';
 
-export const Sacola = () => {
+const Sacola = () => {
   const icon = require('../assets/images/icone-sacola.png');
   return <Image source={icon} style={styles.iconeSacola} />;
 };
@@ -12,3 +12,5 @@ const styles = StyleSheet.create({
     height: 30,
   },
 });
+
+export default Sacola
