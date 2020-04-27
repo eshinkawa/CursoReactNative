@@ -2,10 +2,10 @@ import React from 'react';
 import {View, Text, Image, StyleSheet, TouchableOpacity} from 'react-native';
 import {FONT_FAMILY_REGULAR, FONT_SIZE_16} from '../styles/tipografia';
 
-const Botao = ({width = 200, titulo, icone = true}) => {
+const Botao = ({width = 200, titulo, icone = true, onPressButton}) => {
   const icon = require(`../assets/images/icone-cubo.png`);
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={onPressButton}>
       <View style={{alignItems: 'center', marginTop: 16}}>
         <View style={[styles.container, {width}]}>
           {icone && <Image

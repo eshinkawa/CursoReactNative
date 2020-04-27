@@ -9,7 +9,6 @@ const ListaProdutos = () => {
     <ScrollView contentContainerStyle={{paddingBottom: 36}}>
       <Cabecalho />
       <Lista />
-      <Botao titulo={'AR View'} />
     </ScrollView>
   );
 };

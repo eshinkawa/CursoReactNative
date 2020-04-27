@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   TouchableOpacity,
   Image,
@@ -15,6 +15,7 @@ import {styles} from './styles';
 const DetalhesProduto = () => {
   const imgSrc = require('../../assets/images/bgimage.png');
   const navigation = useNavigation();
+  const [detalhes, setDetalhes] = useState(false);
 
   return (
     <View style={styles.container}>
@@ -66,20 +67,20 @@ const DetalhesProduto = () => {
                 style={styles.imagemItem}
               />
             </View>
-            <View>
+            {detalhes && <View>
               <Text
                 style={styles.textoDescricao}>
                 Jim&Kill Designs created a master piece called Wilson. It's a
                 dream lamp for any chic office out there.
               </Text>
-            </View>
+            </View>}
             <View
               style={styles.rodape}>
               <Text
                 style={styles.moeda}>
                 $92,00
               </Text>
-              <Botao titulo="DETAILS" icone={false} width={140} />
+              <Botao titulo="Show More" icone={false} width={140} onPressButton={() => {setDetalhes(!detalhes)}}/>
             </View>
           </View>
         </View>
