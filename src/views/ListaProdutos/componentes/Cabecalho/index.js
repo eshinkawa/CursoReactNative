@@ -1,7 +1,6 @@
 import React from 'react';
 import {View, Text, Image} from 'react-native';
 import {styles} from './styles';
-import Sacola from '../../../../componentes/Sacola';
 
 const Cabecalho = () => {
   return (
@@ -12,7 +11,10 @@ const Cabecalho = () => {
       />
       <Text style={styles.titulo}>LightAR</Text>
       <View style={styles.containerSacola}>
-        <Sacola />
+        <Image
+          source={require('../../../../assets/images/icone-sacola.png')}
+          style={styles.iconeSacola}
+        />
       </View>
     </View>
   );

@@ -1,14 +1,10 @@
 import {StyleSheet} from 'react-native';
-import { COR_DE_FUNDO } from '../../../../styles/cores';
-import { FONT_FAMILY_REGULAR } from '../../../../styles/tipografia';
+import {COR_DE_FUNDO} from '../../../../styles/cores';
+import {FONT_FAMILY_REGULAR} from '../../../../styles/tipografia';
 
 export const styles = StyleSheet.create({
   container: {
     marginHorizontal: 24,
-  },
-  containerScroll: {
-    justifyContent: 'center',
-    alignItems: 'center',
   },
   separador: {
     borderWidth: 0.5,

@@ -13,4 +13,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Sacola
+export default Sacola;

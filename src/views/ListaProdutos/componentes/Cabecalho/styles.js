@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: 24,
+    paddingVertical: 24,
   },
   titulo: {
     fontFamily: 'OpenSans-ExtraBold',
@@ -16,14 +16,13 @@ export const styles = StyleSheet.create({
   iconeMenu: {
     width: 24,
     height: 24,
+    marginLeft: 24,
   },
   containerSacola: {
     backgroundColor: 'white',
     padding: 18,
     borderBottomLeftRadius: 30,
     borderTopLeftRadius: 30,
-    elevation: 3,
-    marginRight: -24,
   },
   iconeSacola: {
     width: 30,
