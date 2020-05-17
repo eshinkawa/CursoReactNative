@@ -1,9 +1,15 @@
 import {StyleSheet, Dimensions} from 'react-native';
-import { FONT_FAMILY_BOLD, FONT_SIZE_MEDIUM, FONT_SIZE_X_LARGE, FONT_SIZE_SMALL, FONT_FAMILY_REGULAR } from '../../styles/tipografia';
+import {
+  FONT_FAMILY_BOLD,
+  FONT_SIZE_MEDIUM,
+  FONT_SIZE_X_LARGE,
+  FONT_SIZE_SMALL,
+  FONT_FAMILY_REGULAR,
+} from '../../styles/tipografia';
 
 export const styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
   },
   imagemFundo: {width: Dimensions.get('window').width, height: '100%'},
   imagemSeta: {width: 24, height: 24},
@@ -70,5 +76,5 @@ export const styles = StyleSheet.create({
     fontFamily: FONT_FAMILY_BOLD,
     fontSize: 22,
     marginTop: 10,
-  }
+  },
 });

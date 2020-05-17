@@ -41,7 +41,7 @@ const Lista = () => {
     <View style={styles.container}>
       <View style={styles.separador} />
       <View style={styles.containerTexto}>
-        <Text style={styles.texto}>Categories</Text>
+        <Text style={styles.texto}>Categorias</Text>
       </View>
       <FlatList
         numColumns={2}
