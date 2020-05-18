@@ -1,33 +1,13 @@
-import {StyleSheet, Dimensions} from 'react-native';
+import {StyleSheet} from 'react-native';
 import {
-  FONT_FAMILY_BOLD,
-  FONT_SIZE_MEDIUM,
-  FONT_SIZE_X_LARGE,
   FONT_SIZE_SMALL,
+  FONT_SIZE_MEDIUM,
+  FONT_FAMILY_BOLD,
+  FONT_SIZE_X_LARGE,
   FONT_FAMILY_REGULAR,
-} from '../../styles/tipografia';
+} from '../../../../styles/tipografia';
 
 export const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  imagemFundo: {width: Dimensions.get('window').width, height: '100%'},
-  imagemSeta: {width: 24, height: 24},
-  imagemContainer: {flex: 1.5},
-  setaContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    padding: 24,
-  },
-  sacolaContainer: {
-    backgroundColor: 'white',
-    padding: 18,
-    borderBottomLeftRadius: 30,
-    borderTopLeftRadius: 30,
-    elevation: 3,
-    marginRight: -24,
-    marginTop: -10,
-  },
   itemContainer: {
     flex: 1,
     marginTop: -60,
