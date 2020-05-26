@@ -3,7 +3,6 @@ import {View, ImageBackground, Image, TouchableOpacity} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
 import {styles} from './styles';
-import Sacola from '../../../../componentes/Sacola';
 
 const Background = () => {
   const imgSrc = require('../../../../assets/images/bgimage.png');
@@ -22,9 +21,7 @@ const Background = () => {
               style={styles.imagemSeta}
             />
           </TouchableOpacity>
-          <View style={styles.sacolaContainer}>
-            <Sacola />
-          </View>
+          <View />
         </View>
       </ImageBackground>
     </View>

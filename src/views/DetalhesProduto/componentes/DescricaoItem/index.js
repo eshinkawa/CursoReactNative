@@ -24,7 +24,7 @@ const DescricaoItem = () => {
             />
           </View>
           {detalhes && (
-            <View onLoad={animationOpacityLoader} style={styleOpacity}>
+            <View>
               <Text style={styles.textoDescricao}>
                 Jim&Kill Designs created a master piece called Wilson. It's a
                 dream lamp for any chic office out there.
@@ -34,10 +34,10 @@ const DescricaoItem = () => {
           <View style={styles.rodape}>
             <Text style={styles.moeda}>$92,00</Text>
             <Botao
-              titulo="Mostrar mais"
+              titulo={detalhes ? 'Mostrar menos' : 'Mostrar mais'}
               icone={false}
               width={140}
-              onPressButton={() => {
+              onPress={() => {
                 setDetalhes(!detalhes);
               }}
             />

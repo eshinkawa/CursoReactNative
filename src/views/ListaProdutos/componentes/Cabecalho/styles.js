@@ -1,11 +1,9 @@
 import {StyleSheet} from 'react-native';
-import {COR_DE_FUNDO} from '../../../../styles/cores';
-import {FONT_SIZE_24} from '../../../../styles/tipografia';
 
 export const styles = StyleSheet.create({
   container: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    // flexDirection: 'row',
+    // justifyContent: 'space-between',
     alignItems: 'center',
     paddingVertical: 24,
   },
