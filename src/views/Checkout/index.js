@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import {SafeAreaView, Text, StyleSheet} from 'react-native';
-import {DataContext} from '../..';
+import {DataContext} from '../../provider';
 
 const Checkout = () => {
   const {itensCheckout} = useContext(DataContext);

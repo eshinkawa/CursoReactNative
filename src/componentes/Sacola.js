@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import {View, Text, Image, StyleSheet, TouchableOpacity} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import {DataContext} from '../index';
+import {DataContext} from '../provider';
 
 const Sacola = () => {
   const {itensCheckout} = useContext(DataContext);

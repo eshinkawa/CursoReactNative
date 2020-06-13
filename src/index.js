@@ -6,16 +6,14 @@ import {COR_DE_FUNDO} from './styles/cores';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import Checkout from './views/Checkout';
+import Provider from './provider';
 
 const Stack = createStackNavigator();
-const estado_inicial = {
-  itensCheckout: [1, 2, 3, 4],
-};
 
 const App = () => {
   return (
     <NavigationContainer>
-      <DataContext.Provider value={estado_inicial}>
+      <Provider>
         <SafeAreaView style={styles.container}>
           <Stack.Navigator initialRouteName="ListaProdutos">
             <Stack.Screen
@@ -35,7 +33,7 @@ const App = () => {
             />
           </Stack.Navigator>
         </SafeAreaView>
-      </DataContext.Provider>
+      </Provider>
     </NavigationContainer>
   );
 };
