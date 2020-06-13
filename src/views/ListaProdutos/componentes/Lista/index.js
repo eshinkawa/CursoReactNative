@@ -10,6 +10,7 @@ const DATA = [
     imagem: require('../../../../assets/images/01-tablelamps.png'),
     estudio: 'Jim&Jill Designs',
     itemName: 'Wilson',
+    preco: 92.1,
     itemDesc:
       'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old',
   },
@@ -19,6 +20,7 @@ const DATA = [
     imagem: require('../../../../assets/images/02-ceilinglamps.png'),
     estudio: 'Gary&Fly Designs',
     itemName: 'Linda',
+    preco: 123.44,
     itemDesc:
       'Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words',
   },
@@ -28,6 +30,7 @@ const DATA = [
     imagem: require('../../../../assets/images/03-sconces.png'),
     estudio: 'Tom&Jim Designs',
     itemName: 'Jerry',
+    preco: 33.43,
     itemDesc:
       'There are many variations of passages of Lorem Ipsum available, but the majority',
   },
@@ -37,6 +40,7 @@ const DATA = [
     imagem: require('../../../../assets/images/04-floorlamps.png'),
     estudio: 'Kerry&King Designs',
     itemName: 'Jack',
+    preco: 67.23,
     itemDesc:
       'Cicero, written in 45 BC. This book is a treatise on the theory of ethics,',
   },
@@ -46,6 +50,7 @@ const DATA = [
     imagem: require('../../../../assets/images/05-lightdecor.png'),
     estudio: 'Dave&Sugar Designs',
     itemName: 'Amanda',
+    preco: 98.4,
     itemDesc:
       'Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic',
   },
@@ -55,6 +60,7 @@ const DATA = [
     imagem: require('../../../../assets/images/06-garlands.png'),
     estudio: 'Jeff&Lighter Designs',
     itemName: 'Julia',
+    preco: 100.3,
     itemDesc:
       'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below ',
   },

@@ -7,8 +7,14 @@ import {
 } from '../../../../styles/tipografia';
 import {useNavigation} from '@react-navigation/native';
 
-const Item = ({imagem, estudio, titulo, itemDesc, itemName}) => {
+const Item = ({imagem, estudio, titulo, itemDesc, itemName, preco}) => {
   const navigation = useNavigation();
+
+  const numberFormat = value =>
+    new Intl.NumberFormat('pt-BR', {
+      style: 'currency',
+      currency: 'BRL',
+    }).format(value);
 
   return (
     <TouchableOpacity
@@ -19,6 +25,7 @@ const Item = ({imagem, estudio, titulo, itemDesc, itemName}) => {
           itemDesc,
           titulo,
           itemName,
+          preco: numberFormat(preco),
         })
       }
       style={styles.containerItem}>

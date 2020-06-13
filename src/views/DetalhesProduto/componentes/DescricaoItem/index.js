@@ -4,7 +4,14 @@ import {View, Text, Image} from 'react-native';
 import {styles} from './styles';
 import Botao from '../../../../componentes/Botao';
 
-const DescricaoItem = ({imagem, estudio, itemDesc, titulo, itemName}) => {
+const DescricaoItem = ({
+  imagem,
+  estudio,
+  itemDesc,
+  titulo,
+  itemName,
+  preco,
+}) => {
   const [detalhes, setDetalhes] = useState(false);
   return (
     <View style={styles.itemContainer}>
@@ -25,7 +32,7 @@ const DescricaoItem = ({imagem, estudio, itemDesc, titulo, itemName}) => {
             </View>
           )}
           <View style={styles.rodape}>
-            <Text style={styles.moeda}>$92,00</Text>
+            <Text style={styles.moeda}>{preco}</Text>
             <Botao
               titulo={detalhes ? 'Mostrar menos' : 'Mostrar mais'}
               icone={false}

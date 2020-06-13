@@ -8,6 +8,8 @@ export const styles = StyleSheet.create({
   imagemSeta: {
     width: 24,
     height: 24,
+    marginTop: 36,
+    marginLeft: 24,
   },
   imagemContainer: {
     flex: 1.5,
@@ -15,15 +17,5 @@ export const styles = StyleSheet.create({
   setaContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    padding: 24,
-  },
-  sacolaContainer: {
-    backgroundColor: 'white',
-    padding: 18,
-    borderBottomLeftRadius: 30,
-    borderTopLeftRadius: 30,
-    elevation: 3,
-    marginRight: -24,
-    marginTop: -10,
   },
 });

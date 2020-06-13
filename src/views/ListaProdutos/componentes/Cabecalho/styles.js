@@ -2,14 +2,15 @@ import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
   container: {
-    // flexDirection: 'row',
-    // justifyContent: 'space-between',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     alignItems: 'center',
     paddingVertical: 24,
+    paddingLeft: 24,
   },
   titulo: {
-    fontFamily: 'OpenSans-ExtraBold',
-    fontSize: 28,
+    fontFamily: 'OpenSans-Bold',
+    fontSize: 36,
   },
   iconeMenu: {
     width: 24,
