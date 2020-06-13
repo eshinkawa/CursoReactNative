@@ -4,31 +4,24 @@ import {View, Text, Image} from 'react-native';
 import {styles} from './styles';
 import Botao from '../../../../componentes/Botao';
 
-const DescricaoItem = () => {
+const DescricaoItem = ({imagem, estudio, itemDesc, titulo, itemName}) => {
   const [detalhes, setDetalhes] = useState(false);
-
   return (
     <View style={styles.itemContainer}>
       <View style={styles.itemPosicao}>
         <View style={styles.item}>
           <View style={styles.textoPosicao}>
             <View>
-              <Text style={styles.textoSuperior}>Jim&Jill Designs</Text>
-              <Text style={styles.textoMedio}>Wilson</Text>
-              <Text style={styles.textoInferior}>Table Lamp</Text>
+              <Text style={styles.textoSuperior}>{estudio}</Text>
+              <Text style={styles.textoMedio}>{itemName}</Text>
+              <Text style={styles.textoInferior}>{titulo}</Text>
             </View>
 
-            <Image
-              source={require('../../../../assets/images/05-lightdecor.png')}
-              style={styles.imagemItem}
-            />
+            <Image source={imagem} style={styles.imagemItem} />
           </View>
           {detalhes && (
             <View>
-              <Text style={styles.textoDescricao}>
-                Jim&Kill Designs created a master piece called Wilson. It's a
-                dream lamp for any chic office out there.
-              </Text>
+              <Text style={styles.textoDescricao}>{itemDesc}</Text>
             </View>
           )}
           <View style={styles.rodape}>

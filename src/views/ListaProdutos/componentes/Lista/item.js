@@ -7,15 +7,23 @@ import {
 } from '../../../../styles/tipografia';
 import {useNavigation} from '@react-navigation/native';
 
-const Item = ({descricao, imagem}) => {
+const Item = ({imagem, estudio, titulo, itemDesc, itemName}) => {
   const navigation = useNavigation();
 
   return (
     <TouchableOpacity
-      onPress={() => navigation.navigate('DetalhesProduto')}
+      onPress={() =>
+        navigation.push('DetalhesProduto', {
+          imagem,
+          estudio,
+          itemDesc,
+          titulo,
+          itemName,
+        })
+      }
       style={styles.containerItem}>
       <Image source={imagem} style={{height: 84}} resizeMode="contain" />
-      <Text style={styles.texto}>{descricao}</Text>
+      <Text style={styles.texto}>{titulo}</Text>
     </TouchableOpacity>
   );
 };

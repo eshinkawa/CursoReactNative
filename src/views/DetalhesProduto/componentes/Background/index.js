@@ -5,9 +5,9 @@ import {useNavigation} from '@react-navigation/native';
 import {styles} from './styles';
 
 const Background = () => {
-  const imgSrc = require('../../../../assets/images/bgimage.png');
+  const imgSrc = require('../../../../assets/images/bgimg.jpg');
   const navigation = useNavigation();
-  
+
   return (
     <View style={styles.imagemContainer}>
       <ImageBackground
