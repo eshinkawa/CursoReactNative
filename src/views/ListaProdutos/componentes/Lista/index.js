@@ -16,7 +16,7 @@ const DATA = [
   },
   {
     id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
-    titulo: ' Ceiling Lamps',
+    titulo: 'Ceiling Lamps',
     imagem: require('../../../../assets/images/02-ceilinglamps.png'),
     estudio: 'Gary&Fly Designs',
     itemName: 'Linda',
@@ -26,7 +26,7 @@ const DATA = [
   },
   {
     id: '58694a0f-3da1-471f-bd96-145571e29d72',
-    titulo: ' Sconces',
+    titulo: 'Sconces',
     imagem: require('../../../../assets/images/03-sconces.png'),
     estudio: 'Tom&Jim Designs',
     itemName: 'Jerry',
