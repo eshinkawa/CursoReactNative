@@ -2,6 +2,7 @@ import React, {useContext} from 'react';
 import {View, Text, Image, StyleSheet, TouchableOpacity} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {DataContext} from '../provider';
+import {WHITE} from '../styles/cores';
 
 const Sacola = () => {
   const {itensCheckout} = useContext(DataContext);
@@ -51,7 +52,7 @@ const styles = StyleSheet.create({
     padding: 4,
     fontSize: 10,
     fontFamily: 'OpenSans-SemiBold',
-    color: '#fff',
+    color: WHITE,
   },
 });
 

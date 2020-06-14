@@ -8,6 +8,7 @@ import {
   FONT_SIZE_SMALL,
   FONT_FAMILY_SEMI_BOLD,
 } from '../../styles/tipografia';
+import {WHITE} from '../../styles/cores';
 
 const CheckoutItem = ({
   estudio,
@@ -41,7 +42,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginVertical: 8,
+    marginVertical: 4,
   },
   imagemContainer: {
     flex: 1,
@@ -50,8 +51,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  imagem: {width: 40, height: 40},
-  descContaner: {flex: 2, padding: 18},
+  imagem: {width: 40, height: 50},
+  descContaner: {flex: 2, padding: 18, justifyContent: 'center'},
   descTextoSuperior: {
     fontSize: FONT_SIZE_MEDIUM,
     fontFamily: FONT_FAMILY_REGULAR,
@@ -71,7 +72,7 @@ const styles = StyleSheet.create({
     padding: 4,
     fontSize: 10,
     fontFamily: FONT_FAMILY_SEMI_BOLD,
-    color: '#fff',
+    color: WHITE,
   },
   precoTexto: {
     fontFamily: FONT_FAMILY_REGULAR,

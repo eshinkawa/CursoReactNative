@@ -36,7 +36,7 @@ const DescricaoItem = ({
             <Text style={styles.moeda}>{numberFormat(preco)}</Text>
             <Botao
               titulo={'COMPRAR'}
-              width={140}
+              width={'90%'}
               onPress={() => {
                 adicionarItem({
                   estudio,

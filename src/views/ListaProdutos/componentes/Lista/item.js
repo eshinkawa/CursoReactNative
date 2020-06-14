@@ -5,7 +5,6 @@ import {
   FONT_SIZE_SMALL,
 } from '../../../../styles/tipografia';
 import {useNavigation} from '@react-navigation/native';
-import {numberFormat} from '../../../../utils';
 
 const Item = ({imagem, estudio, titulo, itemDesc, itemName, preco, id}) => {
   const navigation = useNavigation();
@@ -23,7 +22,7 @@ const Item = ({imagem, estudio, titulo, itemDesc, itemName, preco, id}) => {
         })
       }
       style={styles.containerItem}>
-      <Image source={imagem} style={{height: 84}} resizeMode="contain" />
+      <Image source={imagem} style={styles.imagem} resizeMode="contain" />
       <Text style={styles.texto}>{titulo}</Text>
     </TouchableOpacity>
   );
@@ -46,6 +45,7 @@ const styles = StyleSheet.create({
     fontSize: FONT_SIZE_SMALL,
     color: '#848486',
   },
+  imagem: {height: 84},
 });
 
 export default Item;

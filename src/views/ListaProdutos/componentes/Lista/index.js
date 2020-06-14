@@ -12,7 +12,7 @@ const DATA = [
     itemName: 'Wilson',
     preco: 92.1,
     itemDesc:
-      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old',
+      'Contrary to popular belief, Lorem Ipsum is not simply random text',
   },
   {
     id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
@@ -22,7 +22,7 @@ const DATA = [
     itemName: 'Linda',
     preco: 123.44,
     itemDesc:
-      'Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words',
+      'Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, lorem ipsum',
   },
   {
     id: '58694a0f-3da1-471f-bd96-145571e29d72',

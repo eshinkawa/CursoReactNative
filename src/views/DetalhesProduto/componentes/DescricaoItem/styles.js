@@ -5,6 +5,7 @@ import {
   FONT_FAMILY_BOLD,
   FONT_SIZE_X_LARGE,
   FONT_FAMILY_REGULAR,
+  FONT_SIZE_LARGE,
 } from '../../../../styles/tipografia';
 
 export const styles = StyleSheet.create({
@@ -54,7 +55,7 @@ export const styles = StyleSheet.create({
   },
   moeda: {
     fontFamily: FONT_FAMILY_BOLD,
-    fontSize: 22,
+    fontSize: FONT_SIZE_LARGE,
     marginTop: 10,
     color: 'black',
   },

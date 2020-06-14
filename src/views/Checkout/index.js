@@ -11,6 +11,7 @@ import {
   FONT_SIZE_MEDIUM,
 } from '../../styles/tipografia';
 import {useNavigation} from '@react-navigation/native';
+import {COR_BOTAO_ACAO} from '../../styles/cores';
 
 const Checkout = () => {
   const {itensCheckout} = useContext(DataContext);
@@ -51,7 +52,7 @@ const styles = StyleSheet.create({
   },
   continuarTexto: {
     fontSize: FONT_SIZE_MEDIUM,
-    color: '#2174FF',
+    color: COR_BOTAO_ACAO,
     marginTop: 20,
     textAlign: 'center',
   },
