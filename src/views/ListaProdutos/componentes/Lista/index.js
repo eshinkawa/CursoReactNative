@@ -46,7 +46,7 @@ const DATA = [
   },
   {
     id: '3ac68afvvc-c605-48d3-a4f8-fbd91aa97f63',
-    titulo: ' Light Decorations',
+    titulo: 'Light Decorations',
     imagem: require('../../../../assets/images/05-lightdecor.png'),
     estudio: 'Dave&Sugar Designs',
     itemName: 'Amanda',

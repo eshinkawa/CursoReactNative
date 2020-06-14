@@ -4,6 +4,7 @@ import {View, Text, Image} from 'react-native';
 import {styles} from './styles';
 import Botao from '../../../../componentes/Botao';
 import {DataContext} from '../../../../provider';
+import {numberFormat} from '../../../../utils';
 
 const DescricaoItem = ({
   imagem,
@@ -14,7 +15,7 @@ const DescricaoItem = ({
   preco,
   id,
 }) => {
-  const {itensCheckout, adicionarItem} = useContext(DataContext);
+  const {adicionarItem} = useContext(DataContext);
   return (
     <View style={styles.itemContainer}>
       <View style={styles.itemPosicao}>
@@ -32,7 +33,7 @@ const DescricaoItem = ({
             <Text style={styles.textoDescricao}>{itemDesc}</Text>
           </View>
           <View style={styles.rodape}>
-            <Text style={styles.moeda}>{preco}</Text>
+            <Text style={styles.moeda}>{numberFormat(preco)}</Text>
             <Botao
               titulo={'COMPRAR'}
               width={140}
@@ -42,8 +43,9 @@ const DescricaoItem = ({
                   itemName,
                   titulo,
                   id,
+                  imagem,
+                  preco,
                 });
-                console.log(itensCheckout);
               }}
             />
           </View>

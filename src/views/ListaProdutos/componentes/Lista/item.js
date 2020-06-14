@@ -18,7 +18,7 @@ const Item = ({imagem, estudio, titulo, itemDesc, itemName, preco, id}) => {
           itemDesc,
           titulo,
           itemName,
-          preco: numberFormat(preco),
+          preco,
           id,
         })
       }

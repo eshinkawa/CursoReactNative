@@ -19,7 +19,6 @@ const Provider = ({children}) => {
             novoItem.quantidade = 1;
             copiaItemsCheckout = [...copiaItemsCheckout, novoItem];
           }
-          console.log('novoArray: ', copiaItemsCheckout);
           setItensCheckout(copiaItemsCheckout);
         },
       }}>
