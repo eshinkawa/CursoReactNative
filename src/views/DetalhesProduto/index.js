@@ -5,7 +5,7 @@ import DescricaoItem from './componentes/DescricaoItem';
 import Background from './componentes/Background';
 
 const DetalhesProduto = ({route}) => {
-  const {imagem, estudio, itemDesc, itemName, titulo, preco} = route.params;
+  const {imagem, estudio, itemDesc, itemName, titulo, preco, id} = route.params;
 
   return (
     <View style={styles.container}>
@@ -17,6 +17,7 @@ const DetalhesProduto = ({route}) => {
         itemName={itemName}
         titulo={titulo}
         preco={preco}
+        id={id}
       />
     </View>
   );

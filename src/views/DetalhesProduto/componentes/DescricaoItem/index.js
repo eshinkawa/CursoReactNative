@@ -1,8 +1,9 @@
-import React, {useState} from 'react';
+import React, {useContext} from 'react';
 import {View, Text, Image} from 'react-native';
 
 import {styles} from './styles';
 import Botao from '../../../../componentes/Botao';
+import {DataContext} from '../../../../provider';
 
 const DescricaoItem = ({
   imagem,
@@ -11,8 +12,9 @@ const DescricaoItem = ({
   titulo,
   itemName,
   preco,
+  id,
 }) => {
-  const [detalhes, setDetalhes] = useState(false);
+  const {itensCheckout, adicionarItem} = useContext(DataContext);
   return (
     <View style={styles.itemContainer}>
       <View style={styles.itemPosicao}>
@@ -26,19 +28,22 @@ const DescricaoItem = ({
 
             <Image source={imagem} style={styles.imagemItem} />
           </View>
-          {detalhes && (
-            <View>
-              <Text style={styles.textoDescricao}>{itemDesc}</Text>
-            </View>
-          )}
+          <View>
+            <Text style={styles.textoDescricao}>{itemDesc}</Text>
+          </View>
           <View style={styles.rodape}>
             <Text style={styles.moeda}>{preco}</Text>
             <Botao
-              titulo={detalhes ? 'Mostrar menos' : 'Mostrar mais'}
-              icone={false}
+              titulo={'COMPRAR'}
               width={140}
               onPress={() => {
-                setDetalhes(!detalhes);
+                adicionarItem({
+                  estudio,
+                  itemName,
+                  titulo,
+                  id,
+                });
+                console.log(itensCheckout);
               }}
             />
           </View>

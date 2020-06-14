@@ -1,21 +1,14 @@
 import React from 'react';
-import {View, Text, Image, StyleSheet, TouchableOpacity} from 'react-native';
+import {Text, Image, StyleSheet, TouchableOpacity} from 'react-native';
 import {
-  FONT_SIZE_14,
   FONT_FAMILY_SEMI_BOLD,
   FONT_SIZE_SMALL,
 } from '../../../../styles/tipografia';
 import {useNavigation} from '@react-navigation/native';
+import {numberFormat} from '../../../../utils';
 
-const Item = ({imagem, estudio, titulo, itemDesc, itemName, preco}) => {
+const Item = ({imagem, estudio, titulo, itemDesc, itemName, preco, id}) => {
   const navigation = useNavigation();
-
-  const numberFormat = value =>
-    new Intl.NumberFormat('pt-BR', {
-      style: 'currency',
-      currency: 'BRL',
-    }).format(value);
-
   return (
     <TouchableOpacity
       onPress={() =>
@@ -26,6 +19,7 @@ const Item = ({imagem, estudio, titulo, itemDesc, itemName, preco}) => {
           titulo,
           itemName,
           preco: numberFormat(preco),
+          id,
         })
       }
       style={styles.containerItem}>

@@ -3,13 +3,24 @@ import React, {useState} from 'react';
 export const DataContext = React.createContext();
 
 const Provider = ({children}) => {
-  const [itensCheckout, setItensCheckout] = useState([1, 2]);
+  const [itensCheckout, setItensCheckout] = useState([]);
   return (
     <DataContext.Provider
       value={{
-        itensCheckout: [1, 2, 3],
-        updateDeliveryStatus: novoItem => {
-          setItensCheckout({...itensCheckout, novoItem});
+        itensCheckout,
+        adicionarItem: novoItem => {
+          let copiaItemsCheckout = [...itensCheckout];
+          let itemFiltrado = copiaItemsCheckout.find(
+            item => item.id === novoItem.id,
+          );
+          if (itemFiltrado) {
+            itemFiltrado.quantidade = itemFiltrado.quantidade + 1;
+          } else {
+            novoItem.quantidade = 1;
+            copiaItemsCheckout = [...copiaItemsCheckout, novoItem];
+          }
+          console.log('novoArray: ', copiaItemsCheckout);
+          setItensCheckout(copiaItemsCheckout);
         },
       }}>
       {children}

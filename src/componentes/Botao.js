@@ -2,18 +2,11 @@ import React from 'react';
 import {View, Text, Image, StyleSheet, TouchableOpacity} from 'react-native';
 import {FONT_SIZE_16, FONT_FAMILY_SEMI_BOLD} from '../styles/tipografia';
 
-const Botao = ({width = 200, titulo, icone = true, onPress}) => {
-  const icon = require('../assets/images/icone-cubo.png');
+const Botao = ({width = 200, titulo, onPress}) => {
   return (
     <TouchableOpacity onPress={onPress}>
       <View style={{alignItems: 'center', marginTop: 16}}>
         <View style={[styles.container, {width}]}>
-          {icone && (
-            <Image
-              source={icon}
-              style={{width: 24, height: 24, marginRight: 8}}
-            />
-          )}
           <Text style={styles.texto}>{titulo}</Text>
         </View>
       </View>
@@ -25,7 +18,7 @@ const styles = StyleSheet.create({
   container: {
     height: 60,
     width: 160,
-    backgroundColor: '#58395b',
+    backgroundColor: '#2174FF',
     borderRadius: 10,
     flexDirection: 'row',
     justifyContent: 'center',
