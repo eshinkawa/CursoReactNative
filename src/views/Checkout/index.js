@@ -8,10 +8,12 @@ import {
   FONT_FAMILY_SEMI_BOLD,
   FONT_SIZE_XX_LARGE,
   FONT_SIZE_LARGE,
-  FONT_SIZE_MEDIUM,
+  FONT_FAMILY_BOLD,
+  FONT_SIZE_SMALL,
 } from '../../styles/tipografia';
 import {useNavigation} from '@react-navigation/native';
 import {COR_BOTAO_ACAO} from '../../styles/cores';
+import {SafeAreaView} from 'react-native-safe-area-context';
 
 const Checkout = () => {
   const {itensCheckout} = useContext(DataContext);
@@ -22,7 +24,7 @@ const Checkout = () => {
     0,
   );
   return (
-    <ScrollView style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Text style={styles.titulo}>Checkout</Text>
       {itensCheckout.map(item => (
         <CheckoutItem {...item} key={item.id} />
@@ -36,7 +38,7 @@ const Checkout = () => {
       <TouchableOpacity onPress={() => navigation.push('ListaProdutos')}>
         <Text style={styles.continuarTexto}>Continuar comprando</Text>
       </TouchableOpacity>
-    </ScrollView>
+    </SafeAreaView>
   );
 };
 
@@ -51,7 +53,8 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   continuarTexto: {
-    fontSize: FONT_SIZE_MEDIUM,
+    fontSize: FONT_SIZE_SMALL,
+    fontFamily: FONT_FAMILY_BOLD,
     color: COR_BOTAO_ACAO,
     marginTop: 20,
     textAlign: 'center',

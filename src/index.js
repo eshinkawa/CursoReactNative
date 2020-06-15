@@ -13,8 +13,8 @@ const Stack = createStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>
-      <Provider>
-        <SafeAreaView style={styles.container}>
+      <SafeAreaView style={styles.container}>
+        <Provider>
           <Stack.Navigator initialRouteName="ListaProdutos">
             <Stack.Screen
               name="ListaProdutos"
@@ -32,8 +32,8 @@ const App = () => {
               options={{headerShown: false}}
             />
           </Stack.Navigator>
-        </SafeAreaView>
-      </Provider>
+        </Provider>
+      </SafeAreaView>
     </NavigationContainer>
   );
 };

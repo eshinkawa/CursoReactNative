@@ -1,7 +1,7 @@
 export const COR_DE_FUNDO = '#F4F0F4';
 export const BLACK = '#000000';
 export const WHITE = '#fff';
-export const COR_BOTAO_ACAO = '#2174FF';
+export const COR_BOTAO_ACAO = '#00adef';
 
 // ACTIONS
 export const SUCCESS = '#3adb76';

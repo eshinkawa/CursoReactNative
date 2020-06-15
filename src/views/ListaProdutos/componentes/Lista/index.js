@@ -1,7 +1,8 @@
-import React from 'react';
-import {View, Text, FlatList} from 'react-native';
+import React, {Fragment} from 'react';
+import {View, Text, FlatList, ScrollView} from 'react-native';
 import {styles} from './styles';
 import Item from './item';
+import Cabecalho from '../Cabecalho';
 
 const DATA = [
   {
@@ -69,15 +70,20 @@ const DATA = [
 const Lista = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.separador} />
-      <View style={styles.containerTexto}>
-        <Text style={styles.texto}>Categorias</Text>
-      </View>
       <FlatList
         numColumns={2}
         data={DATA}
         renderItem={({item}) => <Item {...item} />}
         keyExtractor={item => item.id}
+        ListHeaderComponent={
+          <>
+            <Cabecalho />
+            <View style={styles.separador} />
+            <View style={styles.containerTexto}>
+              <Text style={styles.texto}>Categorias</Text>
+            </View>
+          </>
+        }
       />
     </View>
   );

@@ -22,7 +22,9 @@ const Background = () => {
               style={styles.imagemSeta}
             />
           </TouchableOpacity>
-          <Sacola />
+          <View style={{padding: 18}}>
+            <Sacola />
+          </View>
         </View>
       </ImageBackground>
     </View>

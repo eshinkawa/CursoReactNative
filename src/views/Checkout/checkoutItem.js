@@ -29,7 +29,9 @@ const CheckoutItem = ({
       </View>
 
       <View style={styles.precoContainer}>
-        <Text style={styles.precoTexto}>{numberFormat(preco)}</Text>
+        <Text style={styles.precoTexto}>
+          {numberFormat(preco * quantidade)}
+        </Text>
         <Text style={styles.precoTexto}>Qtd: {quantidade}</Text>
       </View>
     </View>

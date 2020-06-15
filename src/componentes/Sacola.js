@@ -4,7 +4,7 @@ import {useNavigation} from '@react-navigation/native';
 import {DataContext} from '../provider';
 import {WHITE} from '../styles/cores';
 
-const Sacola = () => {
+const Sacola = props => {
   const {itensCheckout} = useContext(DataContext);
   const navigation = useNavigation();
   return (
@@ -37,14 +37,12 @@ const styles = StyleSheet.create({
   containerSacola: {
     backgroundColor: 'white',
     padding: 18,
-    borderBottomLeftRadius: 30,
-    borderTopLeftRadius: 30,
-    marginTop: 16,
+    borderRadius: 30,
   },
   containerQuantidade: {
     backgroundColor: 'red',
     borderRadius: 100,
-    marginTop: -18,
+    marginTop: -22,
     marginLeft: 11,
   },
   textoQuantidade: {

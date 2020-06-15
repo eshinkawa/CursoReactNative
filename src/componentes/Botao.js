@@ -25,7 +25,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  posicao: {alignItems: 'center', marginTop: 16},
+  posicao: {
+    alignItems: 'center',
+    marginTop: 16,
+  },
   texto: {
     fontFamily: FONT_FAMILY_SEMI_BOLD,
     fontSize: FONT_SIZE_16,

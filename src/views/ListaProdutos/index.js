@@ -1,15 +1,10 @@
-import React from 'react';
-import {SafeAreaView, ScrollView} from 'react-native';
+import React, {Fragment} from 'react';
+import {SafeAreaView, View} from 'react-native';
 import Cabecalho from './componentes/Cabecalho';
 import Lista from './componentes/Lista';
 
 const ListaProdutos = () => {
-  return (
-    <ScrollView style={{flex: 1}}>
-      <Cabecalho />
-      <Lista />
-    </ScrollView>
-  );
+  return <Lista />;
 };
 
 export default ListaProdutos;
