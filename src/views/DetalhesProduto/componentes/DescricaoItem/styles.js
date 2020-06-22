@@ -7,6 +7,7 @@ import {
   FONT_FAMILY_REGULAR,
   FONT_SIZE_LARGE,
 } from '../../../../styles/tipografia';
+import {WHITE, BLACK} from '../../../../styles/cores';
 
 export const styles = StyleSheet.create({
   itemContainer: {
@@ -19,7 +20,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   item: {
-    backgroundColor: 'white',
+    backgroundColor: WHITE,
     borderRadius: 30,
     padding: 28,
     width: '80%',
@@ -57,6 +58,6 @@ export const styles = StyleSheet.create({
     fontFamily: FONT_FAMILY_BOLD,
     fontSize: FONT_SIZE_LARGE,
     marginTop: 10,
-    color: 'black',
+    color: BLACK,
   },
 });

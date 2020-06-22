@@ -40,21 +40,28 @@ const CheckoutItem = ({
 
 const styles = StyleSheet.create({
   containerItem: {
-    backgroundColor: 'white',
+    backgroundColor: WHITE,
     borderRadius: 10,
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginVertical: 4,
   },
   imagemContainer: {
-    flex: 1,
+    flex: 20,
     backgroundColor: '#F7F8FC',
     padding: 18,
     justifyContent: 'center',
     alignItems: 'center',
   },
-  imagem: {width: 40, height: 50},
-  descContaner: {flex: 2, padding: 18, justifyContent: 'center'},
+  imagem: {
+    width: 40,
+    height: 50,
+  },
+  descContaner: {
+    flex: 45,
+    padding: 18,
+    justifyContent: 'center',
+  },
   descTextoSuperior: {
     fontSize: FONT_SIZE_MEDIUM,
     fontFamily: FONT_FAMILY_REGULAR,
@@ -64,7 +71,7 @@ const styles = StyleSheet.create({
     fontFamily: FONT_FAMILY_LIGHT,
   },
   precoContainer: {
-    flex: 1.5,
+    flex: 35,
     padding: 18,
     justifyContent: 'center',
     alignItems: 'flex-end',

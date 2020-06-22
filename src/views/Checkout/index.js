@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {Text, StyleSheet, TouchableOpacity, ScrollView} from 'react-native';
+import {Text, StyleSheet, TouchableOpacity, View} from 'react-native';
 import {DataContext} from '../../provider';
 import CheckoutItem from './checkoutItem';
 import {numberFormat} from '../../utils';
@@ -13,7 +13,6 @@ import {
 } from '../../styles/tipografia';
 import {useNavigation} from '@react-navigation/native';
 import {COR_BOTAO_ACAO} from '../../styles/cores';
-import {SafeAreaView} from 'react-native-safe-area-context';
 
 const Checkout = () => {
   const {itensCheckout} = useContext(DataContext);
@@ -24,7 +23,7 @@ const Checkout = () => {
     0,
   );
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <Text style={styles.titulo}>Checkout</Text>
       {itensCheckout.map(item => (
         <CheckoutItem {...item} key={item.id} />
@@ -38,7 +37,7 @@ const Checkout = () => {
       <TouchableOpacity onPress={() => navigation.push('ListaProdutos')}>
         <Text style={styles.continuarTexto}>Continuar comprando</Text>
       </TouchableOpacity>
-    </SafeAreaView>
+    </View>
   );
 };
 

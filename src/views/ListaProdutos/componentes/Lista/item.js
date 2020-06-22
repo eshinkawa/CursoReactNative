@@ -5,6 +5,7 @@ import {
   FONT_SIZE_SMALL,
 } from '../../../../styles/tipografia';
 import {useNavigation} from '@react-navigation/native';
+import {WHITE} from '../../../../styles/cores';
 
 const Item = ({imagem, estudio, titulo, itemDesc, itemName, preco, id}) => {
   const navigation = useNavigation();
@@ -31,7 +32,7 @@ const Item = ({imagem, estudio, titulo, itemDesc, itemName, preco, id}) => {
 const styles = StyleSheet.create({
   containerItem: {
     height: 168,
-    backgroundColor: 'white',
+    backgroundColor: WHITE,
     elevation: 1,
     flex: 1,
     borderRadius: 10,

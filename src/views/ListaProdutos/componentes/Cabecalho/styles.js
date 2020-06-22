@@ -1,4 +1,6 @@
 import {StyleSheet} from 'react-native';
+import {WHITE} from '../../../../styles/cores';
+import {FONT_FAMILY_BOLD} from '../../../../styles/tipografia';
 
 export const styles = StyleSheet.create({
   container: {
@@ -9,7 +11,7 @@ export const styles = StyleSheet.create({
     paddingLeft: 24,
   },
   titulo: {
-    fontFamily: 'OpenSans-Bold',
+    fontFamily: FONT_FAMILY_BOLD,
     fontSize: 36,
   },
   iconeMenu: {
@@ -18,7 +20,7 @@ export const styles = StyleSheet.create({
     marginLeft: 24,
   },
   containerSacola: {
-    backgroundColor: 'white',
+    backgroundColor: WHITE,
     padding: 18,
     borderBottomLeftRadius: 30,
     borderTopLeftRadius: 30,

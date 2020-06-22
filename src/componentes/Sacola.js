@@ -3,6 +3,7 @@ import {View, Text, Image, StyleSheet, TouchableOpacity} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {DataContext} from '../provider';
 import {WHITE} from '../styles/cores';
+import {FONT_FAMILY_SEMI_BOLD} from '../styles/tipografia';
 
 const Sacola = props => {
   const {itensCheckout} = useContext(DataContext);
@@ -35,7 +36,7 @@ const styles = StyleSheet.create({
     height: 30,
   },
   containerSacola: {
-    backgroundColor: 'white',
+    backgroundColor: WHITE,
     padding: 18,
     borderRadius: 30,
   },
@@ -49,7 +50,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     padding: 4,
     fontSize: 10,
-    fontFamily: 'OpenSans-SemiBold',
+    fontFamily: FONT_FAMILY_SEMI_BOLD,
     color: WHITE,
   },
 });
