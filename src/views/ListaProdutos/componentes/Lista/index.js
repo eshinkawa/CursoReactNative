@@ -7,7 +7,7 @@ import Cabecalho from '../Cabecalho';
 const DATA = [
   {
     id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
-    titulo: 'Table Lamps',
+    titulo: 'Abajur',
     imagem: require('../../../../assets/images/01-tablelamps.png'),
     estudio: 'Jim&Jill Designs',
     itemName: 'Wilson',
@@ -17,7 +17,7 @@ const DATA = [
   },
   {
     id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
-    titulo: 'Ceiling Lamps',
+    titulo: 'Lâmpada de teto',
     imagem: require('../../../../assets/images/02-ceilinglamps.png'),
     estudio: 'Gary&Fly Designs',
     itemName: 'Linda',
@@ -27,7 +27,7 @@ const DATA = [
   },
   {
     id: '58694a0f-3da1-471f-bd96-145571e29d72',
-    titulo: 'Sconces',
+    titulo: 'Arandela',
     imagem: require('../../../../assets/images/03-sconces.png'),
     estudio: 'Tom&Jim Designs',
     itemName: 'Jerry',
@@ -37,7 +37,7 @@ const DATA = [
   },
   {
     id: 'bd7acbea-c1b1-462c2-aed5-3ad53abb28ba',
-    titulo: 'Floor Lamps',
+    titulo: 'Luminária de chão',
     imagem: require('../../../../assets/images/04-floorlamps.png'),
     estudio: 'Kerry&King Designs',
     itemName: 'Jack',
@@ -47,7 +47,7 @@ const DATA = [
   },
   {
     id: '3ac68afvvc-c605-48d3-a4f8-fbd91aa97f63',
-    titulo: 'Light Decorations',
+    titulo: 'Luzes decorativas',
     imagem: require('../../../../assets/images/05-lightdecor.png'),
     estudio: 'Dave&Sugar Designs',
     itemName: 'Amanda',
@@ -57,7 +57,7 @@ const DATA = [
   },
   {
     id: '58694a0f-3deea1-471f-bd96-145571e29d72',
-    titulo: 'Garlands',
+    titulo: 'Guirlanda',
     imagem: require('../../../../assets/images/06-garlands.png'),
     estudio: 'Jeff&Lighter Designs',
     itemName: 'Julia',
